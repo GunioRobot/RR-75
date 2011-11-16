@@ -1,0 +1,20 @@
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
+
+require File.expand_path('../config/application', __FILE__)
+require 'rake'
+
+Lojadecarros::Application.load_tasks
+
+desc 'Tarefa simples para iniciar com o Rake'
+task :hello do
+  username = ENV["USER"]
+  puts "Hi #{username}!"
+end
+
+desc 'Sincroniza arquivos com o diretorio de backup'
+task :backup do
+  system "rsync -ruv ~/workspace ~/backup"
+end
+
+

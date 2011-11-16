@@ -1,0 +1,54 @@
+<% if current_user %>
+<div id="form">
+<%=form_for @carro, :url => {:action => 'create'} do |f| -%>
+<strong>Quer vender ? </strong>
+<br/>
+<br/>
+
+<%= f.label :nome %><br/>
+<%= f.text_field :nome, :class => 'button-input'%><br/>
+
+<%= f.label :descricao %><br/>
+<%= f.text_area :descricao, :cols=> 26, :rows=> 9%><br/>
+
+<%= f.label :preco %><br/>
+<%= f.text_field :preco, :class => 'button-input'%><br/>
+<br/>
+
+<%= f.submit "Anunciar!", :disable_with => '...', :class => 'anunciar'%>
+
+<%end -%>
+
+</div>
+<% else %>
+Para cadastrar faça o login! <%= link_to 'Login', '/users/sign_in' %>
+<% end %>
+
+<div style="clear:both"></div>
+
+<div id="busca">
+	<strong>Carros a venda</strong> 
+
+	<%if !@carros.blank? %>
+		<%for carro in @carros %>
+		<br/>
+		<b><%=carro.nome%></b><br/>
+		<%=carro.descricao%><br/>
+		R$<%=carro.preco%><br/>
+		<%end%>
+	<%else%>
+		<p>Nenhum carro cadastrado</p>
+	<%end%>
+</div>
+
+<br/>
+<%= form_tag :controller => 'carros', :action => 'busca' do %>
+	<%= text_field_tag 'query', nil, :class => 'button-search'%>
+	<%= submit_tag "Buscar", :disable_with => '...', :class => 'buscar'%>
+<%end%>
+	
+	
+
+
+
+
