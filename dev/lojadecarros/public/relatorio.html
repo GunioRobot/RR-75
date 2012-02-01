@@ -430,24 +430,24 @@ f.top,left:d.left-f.left}},offsetParent:function(){return this.map(function(){fo
 e&&e.document?e.document.compatMode==="CSS1Compat"&&e.document.documentElement["client"+b]||e.document.body["client"+b]:e.nodeType===9?Math.max(e.documentElement["client"+b],e.body["scroll"+b],e.documentElement["scroll"+b],e.body["offset"+b],e.documentElement["offset"+b]):f===w?c.css(e,d):this.css(d,typeof f==="string"?f:f+"px")}});A.jQuery=A.$=c})(window);
 
   SCENARIOS = "h3[id^='scenario_']";
-  
+
   $(document).ready(function() {
     $(SCENARIOS).css('cursor', 'pointer');
     $(SCENARIOS).click(function() {
       $(this).siblings().toggle(250);
     });
-    
+
     $("#collapser").css('cursor', 'pointer');
     $("#collapser").click(function() {
       $(SCENARIOS).siblings().hide();
     });
-    
+
     $("#expander").css('cursor', 'pointer');
     $("#expander").click(function() {
       $(SCENARIOS).siblings().show();
     });
   })
-  
+
   function moveProgressBar(percentDone) {
     $("cucumber-header").css('width', percentDone +"%");
   }
@@ -459,5 +459,5 @@ e&&e.document?e.document.compatMode==="CSS1Compat"&&e.document.documentElement["
     $('#'+element_id).css('background', '#FAF834');
     $('#'+element_id).css('color', '#000000');
   }
-  
+
 </script></head><body><!-- Step count 7--><div class="cucumber"><div id="cucumber-header"><div id="label"><h1>Cucumber Features</h1></div><div id="summary"><p id="totals"></p><p id="duration"></p><div id="expand-collapse"><p id="expander">Expand All</p><p id="collapser">Collapse All</p></div></div></div><div class="feature"><pre class="comment">#language: pt<br/></pre><h2><span class="val">Funcionalidade: Carros</span></h2><p class="narrative">Para vender meu carro<br/>Como um usu&#225;rio do sistema<br/>Eu quero registrar meu carro<br/></p><div class='scenario'><h3 id="scenario_1"><span class="keyword">Cenario:</span> <span class="val">Registrando um carro</span></h3><ol><li id='features_carros_feature_9' class='step passed'><div class="step_name"><span class="keyword">Dado </span><span class="step val">que estou na pagina inicial</span></div><div class="step_file"><span>features/step_definitions/carros_steps.rb:3</span></div></li> <script type="text/javascript">moveProgressBar('14.2');</script><li id='features_carros_feature_10' class='step passed'><div class="step_name"><span class="keyword">E </span><span class="step val">preencho o campo &quot;<span class="param">carro[nome]</span>&quot; com &quot;<span class="param">Monza</span>&quot;</span></div><div class="step_file"><span>features/step_definitions/carros_steps.rb:7</span></div></li> <script type="text/javascript">moveProgressBar('28.5');</script><li id='features_carros_feature_11' class='step passed'><div class="step_name"><span class="keyword">E </span><span class="step val">preencho o campo &quot;<span class="param">carro[descricao]</span>&quot; com &quot;<span class="param">Muito bom estado.</span>&quot;</span></div><div class="step_file"><span>features/step_definitions/carros_steps.rb:7</span></div></li> <script type="text/javascript">moveProgressBar('42.8');</script><li id='features_carros_feature_12' class='step passed'><div class="step_name"><span class="keyword">E </span><span class="step val">preencho o campo &quot;<span class="param">carro[preco]</span>&quot; com &quot;<span class="param">5000</span>&quot;</span></div><div class="step_file"><span>features/step_definitions/carros_steps.rb:7</span></div></li> <script type="text/javascript">moveProgressBar('57.1');</script><li id='features_carros_feature_13' class='step passed'><div class="step_name"><span class="keyword">E </span><span class="step val">aperto o botao &quot;<span class="param">Anunciar!</span>&quot;</span></div><div class="step_file"><span>features/step_definitions/carros_steps.rb:11</span></div></li> <script type="text/javascript">moveProgressBar('71.4');</script><li id='features_carros_feature_14' class='step passed'><div class="step_name"><span class="keyword">Entao </span><span class="step val">eu deveria ver &quot;<span class="param">Muito bom estado.</span>&quot;</span></div><div class="step_file"><span>features/step_definitions/carros_steps.rb:15</span></div></li> <script type="text/javascript">moveProgressBar('85.7');</script><li id='features_carros_feature_15' class='step passed'><div class="step_name"><span class="keyword">Entao </span><span class="step val">mostra a tela</span></div><div class="step_file"><span>features/step_definitions/carros_steps.rb:19</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script></ol></div></div><script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0m0.995s seconds</strong>";</script><script type="text/javascript">document.getElementById('totals').innerHTML = "1 scenario (1 passed)<br />7 steps (7 passed)";</script></div></body></html>

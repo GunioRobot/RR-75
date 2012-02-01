@@ -24,7 +24,7 @@ describe Carro do
 		monza = carros(:monza)
 		monza.nome.should be == 'monza'
 		monza.descricao.should be == 'vendo monza 92'
-		monza.preco.should be == 12000 
+		monza.preco.should be == 12000
 	end
 
 	it "testando fabrica" do
@@ -33,5 +33,5 @@ describe Carro do
 		c.descricao.should be ==  'vendo celta usado, ano 2001'
 		c.preco.should be == 17000
 	end
-	
+
 end

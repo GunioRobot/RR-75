@@ -10,7 +10,7 @@ class CarrosController < ApplicationController
 		carro = Carro.new(params[:carro])
 		carro.save
 		redirect_to :action => "index"
-		
+
 	end
 
 	def busca

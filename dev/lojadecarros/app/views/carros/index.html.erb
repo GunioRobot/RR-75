@@ -27,7 +27,7 @@ Para cadastrar faça o login! <%= link_to 'Login', '/users/sign_in' %>
 <div style="clear:both"></div>
 
 <div id="busca">
-	<strong>Carros a venda</strong> 
+	<strong>Carros a venda</strong>
 
 	<%if !@carros.blank? %>
 		<%for carro in @carros %>
@@ -46,8 +46,8 @@ Para cadastrar faça o login! <%= link_to 'Login', '/users/sign_in' %>
 	<%= text_field_tag 'query', nil, :class => 'button-search'%>
 	<%= submit_tag "Buscar", :disable_with => '...', :class => 'buscar'%>
 <%end%>
-	
-	
+
+
 
 
 

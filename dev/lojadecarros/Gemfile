@@ -11,7 +11,7 @@ gem 'spork'
 gem 'launchy'
 gem 'will_paginate'
 gem "factory_girl_rails"
-gem 'thinking-sphinx', :require => 'thinking_sphinx' 
+gem 'thinking-sphinx', :require => 'thinking_sphinx'
 gem 'restfulie'
 gem 'devise'
 
